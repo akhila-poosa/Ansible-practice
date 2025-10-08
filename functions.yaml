@@ -4,7 +4,7 @@
   vars: 
     colors: yellow, red, blue, pink #these are strings
   tags: 
-    Application: nginx  
+    Application: catalogue  
     Environment: UAT  
   tasks:
   - name: default variables
