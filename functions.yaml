@@ -1,9 +1,17 @@
 - name: functions
   hosts: localhost
   connection: local
+  vars:
+    colors: yellow, red, blue, pink
   tasks:
   - name: default variables
     ansible.builtin.debug: 
       msg: "hello, {{ name | default('Ramesh') }}" #default is a function
+
+  #converting string to list using split function
+
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "colors are: {{ colors | split(',') }}"    
 
   
