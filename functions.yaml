@@ -12,6 +12,6 @@
 
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "colors are: {{ colors | split(',') }}"    
+      msg: "colors are: {{ colors |  split(',') }}"   
 
   
