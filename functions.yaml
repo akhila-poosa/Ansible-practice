@@ -19,7 +19,7 @@
   #converting dictionaries to list
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "tags are: {{ tags | dic2items }}"
+      msg: "Tags are: {{ tags | dict2items }}"
 
      
 
