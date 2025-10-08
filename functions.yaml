@@ -3,7 +3,7 @@
   connection: local
   vars: 
     colors: yellow, red, blue, pink #these are strings
-  tags: #this a dictionary/map which has key-value pair
+  tags: 
     Application: nginx  
     Environment: UAT  
   tasks:
