@@ -1,0 +1,41 @@
+- name: "akhila poosa"
+  dob: "29-09-93"
+  age: 30
+  addresses:
+    # Object
+  - doorNo: 4-32
+    street: "gandhi nagar"
+    city: hyderabd
+    pin: 500070
+    type: current
+  
+  - doorNo: 4-32
+    street: "gandhi nagar"
+    city: hyderabd
+    pin: 500070
+    type: permanent
+  skills:
+  - java
+  - devops
+  - cloud
+
+- name: "ramesh"
+  dob: "18-04-64"
+  age: 55
+  addresses:
+    # Object
+  - doorNo: 4-32
+    street: "gandhi nagar"
+    city: hyderabd
+    pin: 500070
+    type: current
+  
+  - doorNo: 4-32
+    street: "gandhi nagar"
+    city: hyderabd
+    pin: 500070
+    type: permanent
+  skills:
+  - sports
+  - senior consultant
+  - accounts

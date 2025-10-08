@@ -1,0 +1,21 @@
+{
+    "name": "akhila poosa",
+    "dob": "29-09-93",
+    "addresses": [
+        {
+            "type": "current",
+            "doono": "1-23",
+            "street": "gandhi nagar",
+            "city": "hyd",
+            "pin": 500070
+        },
+        {
+            "type": "permanent",
+            "doono": "1-23",
+            "street": "gandhi nagar",
+            "city": "hyd",
+            "pin": 500070
+        }
+    ],
+    "skills": ["java", "devops", "cloud"]
+}
