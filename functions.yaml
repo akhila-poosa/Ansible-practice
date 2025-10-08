@@ -3,9 +3,9 @@
   connection: local
   vars: 
     colors: yellow, red, blue, pink #these are strings
-  tags: 
-    Application: catalogue  
-    Environment: UAT  
+    tags: #this is a dictionary/map with key-pair value
+      Application: catalogue  
+      Environment: UAT  
   tasks:
   - name: default variables
     ansible.builtin.debug: 
