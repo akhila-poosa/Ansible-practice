@@ -1,17 +1,26 @@
 - name: functions
   hosts: localhost
   connection: local
-  vars:
-    colors: yellow, red, blue, pink
+  vars: 
+    colors: yellow, red, blue, pink #these are strings
+  tags:
+    Application: nginx #this a dictionary/map which has key-value pair
+    Environment: UAT  
   tasks:
   - name: default variables
     ansible.builtin.debug: 
       msg: "hello, {{ name | default('Ramesh') }}" #default is a function
 
   #converting string to list using split function
-
   - name: convert string to list
     ansible.builtin.debug:
-      msg: "colors are: {{ colors |  split(',') }}"   
+      msg: "colors are: {{ colors |  split(',') }}"  
+
+  #converting dictionaries to list
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "tags are: {{ tags | dic2items }}"
+
+     
 
   
