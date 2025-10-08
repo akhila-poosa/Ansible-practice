@@ -3,9 +3,17 @@
   connection: local
   vars: 
     colors: yellow, red, blue, pink #these are strings
+   
     tags: #this is a dictionary/map with key-pair value
       Application: catalogue  
       Environment: UAT  
+   
+    listTags: # they have started with - so its a list
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev  
+  
   tasks:
   - name: default variables
     ansible.builtin.debug: 
@@ -20,6 +28,11 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"
+
+  #converting list to map
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | items2dict }}"
 
      
 
