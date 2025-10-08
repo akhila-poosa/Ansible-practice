@@ -1,5 +1,5 @@
 - name: check the facts
-  hosts: local
+  hosts: localhost
   connection: local
   become: yes
   tasks:
