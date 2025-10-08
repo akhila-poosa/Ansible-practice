@@ -3,8 +3,8 @@
   connection: local
   vars: 
     colors: yellow, red, blue, pink #these are strings
-  tags:
-    Application: nginx  #this a dictionary/map which has key-value pair
+  tags: #this a dictionary/map which has key-value pair
+    Application: nginx  
     Environment: UAT  
   tasks:
   - name: default variables
