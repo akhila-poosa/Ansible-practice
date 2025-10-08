@@ -1,9 +1,9 @@
 - name: functions
   hosts: local
-  connections: local
+  connection: local
   tasks:
   - name: default variables
     ansible.builtin.debug: 
-      msg: "hello, {{ name | default('Ramesh') }} " #default is a function
+      msg: "hello, {{ name | default('Ramesh') }}" #default is a function
 
   
